@@ -80,6 +80,16 @@ body {
     background-image: url(../images/ryu-cool.gif);
 }
 
+.how-to {
+    font-family: cursive;
+    font-size: 18px;
+    color: black;
+    float: right;
+    text-align: justify;
+    width: 350px;
+    margin-right: 20rem;
+}
+
 .hadouken,
 .ryu-ready,
 .ryu-still,
@@ -98,6 +108,18 @@ body {
     z-index: 10;
     top: 165px;
     left: 585px;
+}
+
+.hadouken-bubble {
+    background-image: url(../images/hadouken.jpg);
+    width: 200px;
+    height: 156px;
+    display: none;
+    float: left;
+    position: absolute;
+    z-index: 9;
+    top: 10px;
+    left: 550px;
 }
 
 
