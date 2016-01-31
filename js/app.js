@@ -1,4 +1,5 @@
 $(document).ready(function () {
+
     $('.ryu-action').hide();
     $('.ryu-still').show();
 
