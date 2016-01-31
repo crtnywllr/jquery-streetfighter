@@ -27,6 +27,8 @@
 
 body {
     background-color: black;
+    font-family: 'Permanent Marker', cursive;
+    font-size: 16px;
 }
 
 
@@ -46,12 +48,35 @@ body {
     min-width: 1200px;
     height: 500px;
     position: relative;
-    z-index: 1;
 }
 
 .ryu {
     width: 659px;
     height: 494px;
+}
+
+.hadouken {
+    background-image: url(../images/hadouken.gif);
+    width: 156px;
+    height: 90px;
+    display: none;
+    float: left;
+    position: absolute;
+    z-index: 10;
+    top: 165px;
+    left: 585px;
+}
+
+.hadouken-bubble {
+    background-image: url(../images/hadouken.jpg);
+    width: 200px;
+    height: 156px;
+    display: none;
+    float: left;
+    position: absolute;
+    z-index: 9;
+    top: 10px;
+    left: 550px;
 }
 
 .ryu-ready,
@@ -81,13 +106,17 @@ body {
 }
 
 .how-to {
-    font-family: cursive;
-    font-size: 18px;
-    color: black;
     float: right;
     text-align: justify;
-    width: 350px;
-    margin-right: 20rem;
+    line-height: 50px;
+    display: block;
+    width: 50%;
+    margin-right: 10rem;
+    font-size: 24px;
+}
+
+.how-to h1 + h1 {
+    margin-left: 20rem;
 }
 
 .hadouken,
@@ -96,30 +125,6 @@ body {
 .ryu-throw,
 .ryu-cool {
     background-repeat: no-repeat;
-}
-
-.hadouken {
-    background-image: url(../images/hadouken.gif);
-    width: 156px;
-    height: 90px;
-    display: none;
-    float: left;
-    position: absolute;
-    z-index: 10;
-    top: 165px;
-    left: 585px;
-}
-
-.hadouken-bubble {
-    background-image: url(../images/hadouken.jpg);
-    width: 200px;
-    height: 156px;
-    display: none;
-    float: left;
-    position: absolute;
-    z-index: 9;
-    top: 10px;
-    left: 550px;
 }
 
 
