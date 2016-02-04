@@ -35,24 +35,30 @@ $(document).ready(function () {
 
         })
     $(document).keydown(function (key) {
-            if (key.which == 88)
+            if (key.which == 88) {
                 $('.ryu-action').hide();
-            $('.ryu-cool').show();
-            playCool()
+                $('.ryu-cool').show();
+                playCool()
+            }
         })
         .keyup(function (key) {
-            if (key.which == 88)
+            if (key.which == 88) {
                 $('.ryu-action').hide();
-            $('.ryu-still').show();
-            $('#cool')[0].pause();
+                $('.ryu-still').show();
+                $('#cool')[0].pause();
+            }
         });
 
 });
+var hadouken = false;
 
 function playHadouken() {
-    $('#hadouken-sound')[0].volume = 0.5;
-    $('#hadouken-sound')[0].load();
-    $('#hadouken-sound')[0].play();
+    hadouken = !hadouken;
+    if (hadouken) {
+        $('#hadouken-sound')[0].volume = 0.5;
+        $('#hadouken-sound')[0].load();
+        $('#hadouken-sound')[0].play();
+    }
 }
 
 var coolSound = false;
